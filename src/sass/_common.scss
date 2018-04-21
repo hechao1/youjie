@@ -1,0 +1,182 @@
+@import "variables";
+@import "icons";
+@import "animate";
+@import "extends";
+@import "mixins";
+@import "print";
+@import "reset";
+//
+// common
+// --------------------------------------------------
+
+html,body{
+    height:100%;
+}
+#print{
+    display: none;
+}
+.event-disabled{
+    pointer-events:none;
+}
+.placeholder{
+    color:#D1D1D1!important
+}
+.lazyload{
+    opacity:1;
+    transition:opacity ease .3s;
+}
+.lazy-box{
+    background-color: #fff;
+    &:before{
+        width:30px;
+        height:30px;
+        font-size:30px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin:-15px 0 0 -15px;
+    }
+    .lazyload{
+        opacity:0;
+    }
+}
+// button
+.button{
+    cursor:pointer;
+    font-size: 12px;
+    font-weight: normal;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 20px;
+    color:#fff;
+    background-color: $green;
+    border:1px solid $green;
+    border-radius:4px;
+    box-sizing:border-box;
+    transition:all ease .3s;
+    position: relative;
+    margin:0 auto;
+    &.short{
+        width: 80px;
+    }
+    &:hover{
+        background-color:darken($green,5%);
+        border:1px solid darken($green,5%);
+    }
+    &:active{
+        background-color:darken($green,10%);
+        border:1px solid darken($green,10%);
+    }
+    &.close{
+        color:$importColor;
+        background-color: transparent;
+        border:1px solid $defaultColor;
+        &:active{
+            border-color:darken($defaultColor,10%);
+            color:darken($importColor,10%);
+        }
+    }
+    &.disabled{
+        &:after{
+
+        }
+        pointer-events:none;
+    }
+}
+
+#app-box{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.router {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.router-inner{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.sub-router{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow:auto
+}
+.wrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing:border-box;
+    top:0;
+    left:0;
+}
+.fade-enter-active, .fade-leave-active{
+    transition: opacity ease 300ms;
+}
+.fade-enter, .fade-leave-active {
+    opacity:0;
+}
+
+.down-enter-active, .down-leave-active{
+    transition: all ease 200ms;
+}
+.down-enter, .down-leave-active {
+    opacity: 0;
+    transform: translate3d(0,-10px,0);
+}
+
+.up-enter-active, .up-leave-active{
+    transition: all ease 250ms;
+}
+.up-enter, .up-leave-active {
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+}
+
+// transition-router
+.router-enter-active, .router-leave-active{
+    transition: all ease 200ms;
+}
+.router-enter, .router-leave-active {
+    opacity: 0;
+}
+
+// transition-router-out
+.router-out-enter-active, .router-out-leave-active{
+    transition: all ease 300ms;
+}
+.router-out-enter{
+    opacity: 0;
+    transform: translate3d(-20px,0,0)
+}
+.router-out-leave-active {
+    opacity: 0;
+    transform: translate3d(20px,0,0)
+}
+
+// transition-router-in
+.router-in-enter-active, .router-in-leave-active{
+    transition: all ease 300ms;
+}
+.router-in-enter{
+    opacity: 0;
+    transform: translate3d(20px,0,0)
+}
+.router-in-leave-active {
+    opacity: 0;
+    transform: translate3d(-20px,0,0)
+}
+
+

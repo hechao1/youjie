@@ -1,0 +1,27 @@
+//
+// print
+// --------------------------------------------------
+
+
+
+@media print {
+	@page{
+		size: A4 portrait;
+    	padding:2.5cm 2cm;
+	}
+
+  	#app-box{
+  		display: none;
+  	}
+  	#print{
+  		display: flex!important;
+    	justify-content: center;
+  	}
+  	.component-hide-part__show-all{
+  		display:none;
+  	}
+  	.component-hide-part__content{
+  		max-height:none!important;
+  	}
+}
+

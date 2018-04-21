@@ -1,0 +1,45 @@
+@charset "utf-8";
+//
+// Variables
+// --------------------------------------------------
+
+
+// font
+//-----------------------------------------------------
+$baseFontSize:          14px !default;
+$baseLineHeight:        1 !default;
+$baseFontFamily:        -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+$baseFontWeight:        300;
+
+
+// color
+//-----------------------------------------------------
+$backgroundColor:		#fff !default;
+$defaultColor:          #757575 !default;
+$importColor:			#212121 !default;
+$disabledColor:         #cccccc !default;
+$flowColor:         	#f8f8f8 !default;
+$sectionColor:          #eee !default;
+$placeholderColor:		#BDBDBD !default;
+$dark:          		#bdbdbd !default;
+$pink:                  #dc236b !default;
+$blue:                  #2B3C73 !default;
+$yellow:                #ffb718 !default;
+$red:                   #f44336 !default;
+$gold:                  #f1c500 !default;
+$green:                 #00B1B3 !default;
+$gray:                  #989898 !default;
+$grayLight:             #f1f1f1 !default;
+$orange:                #ff6e40 !default;
+$orangeLight:           #ff5d3b !default;
+$black:                 #4c4c4c !default;
+$brown:                 #7d4a31 !default;
+
+//z-index
+//-----------------------------------------------------
+$zIndex_loading_full: 	1000;
+$zIndex_msgTip: 		999;
+$zIndex_modal: 			998;
+$zIndex_download: 		997;
+$zIndex_loading: 		996;
+

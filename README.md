@@ -1,5 +1,5 @@
 # 有借管理后台  
-vue+element ui
+vue
 
 
 
